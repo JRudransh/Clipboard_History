@@ -1,4 +1,12 @@
-# Importing required modules
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# @Date    : 28-01-2023
+# @Time    : 11:12 am
+# @Author  : bhaskar.uprety
+# @File    : functions.py
+
+"""functions.py File created on 28-01-2023"""
+
 from os import mkdir
 from variables import error_folder, dynamic_filename
 import datetime
@@ -6,6 +14,7 @@ import datetime
 
 # Function for creating new folder
 def create_folder(folder_name):
+    """Implemented create_folder"""
     created = False
     try:
         mkdir(folder_name)
@@ -13,11 +22,6 @@ def create_folder(folder_name):
     except FileExistsError:
         pass
     return created
-
-
-# Function for submitting error
-def submit_error(error_text):
-    create_folder(error_folder)
 
 
 # Function for creating dynamic file

@@ -1,4 +1,11 @@
-#!/usr/bin/env python3.8
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# @Date    : 28-01-2023
+# @Time    : 11:10 am
+# @Author  : bhaskar.uprety
+# @File    : main.py
+
+"""main.py File created on 28-01-2023"""
 
 from functions import create_folder, create_file_dynamic, append_file
 from clipboard import paste
@@ -20,4 +27,3 @@ while True:
             count += 1
         else:
             sleep(0.2)
-
